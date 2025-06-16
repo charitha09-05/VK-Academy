@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VK Academy Courses</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <style>
+    :root {
+      --bg: #f7f5ff;
+      --card: white;
+      --text: #333;
+      --header: #580063;
+      --accent: #ffd700;
+      --footer: #32003b;
+    }
+
+    body.dark-mode {
+      --bg: #1e1e2f;
+      --card: #2c2c3e;
+      --text: #f1f1f1;
+      --header: #3d0050;
+      --accent: #ffc107;
+      --footer: #140021;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      margin: 0;
+      padding: 0;
+    }
+
+    nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #580063; /* Purple background */
+  padding: 10px 20px;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.nav-left img {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+}
+
+.brand-name {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-right {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+}
+
+.nav-right a {
+  color: white;
+  font-weight: 600;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.nav-right a:hover {
+  background-color: #770080;
+  padding: 8px 12px;
+  border-radius: 5px;
+}
+
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    .course-card {
+      background-color: var(--card);
+      border-radius: 10px;
+      margin-bottom: 15px;
+      box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+      transition: transform 0.2s ease;
+    }
+
+    .course-card:hover {
+      transform: translateY(-3px);
+    }
+
+    .card-header {
+      background-color: #eee0f8;
+      padding: 15px 20px;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-weight: bold;
+      font-size: 1.1em;
+      border-radius: 10px 10px 0 0;
+    }
+
+    .card-body {
+      display: none;
+      padding: 15px 20px;
+    }
+
+    .card-body ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .card-body li {
+      margin: 10px 0;
+    }
+
+    .card-body input[type="checkbox"] {
+      margin-right: 10px;
+      transform: scale(1.2);
+    }
+
+    .card-body i {
+      color: var(--header);
+      margin-right: 6px;
+    }
+
+    .demo-banner {
+      text-align: center;
+      background: var(--accent);
+      color: black;
+      padding: 15px;
+      margin: 30px auto;
+      font-size: 1.2em;
+      font-weight: bold;
+      border-radius: 10px;
+      width: 90%;
+    }
+
+    .summary {
+      text-align: center;
+      margin: 20px;
+    }
+
+    .summary button { 
+      padding: 10px 25px;
+      font-size: 1em;
+      background-color: var(--header);
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    .summary button:hover {
+      background-color: green;
+    }
+
+    footer {
+      background-color: var(--footer);
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+
+<body>
+  <nav>
+    <div class="nav-left">
+      <img src="p1.jpg" alt="VK Academy Logo" />
+      <span class="brand-name">VK Academy</span>
+    </div>
+    <div class="nav-right">
+      <a href="vk.html"><i class="fas fa-home"></i> Home</a>
+      <a href="courses.html"><i class="fas fa-book-open"></i> Courses</a>
+      <a href="contact.html"><i class="fas fa-phone"></i> Contact</a>
+    </div>
+  </nav>
+  
+
+  <div class="container" id="courses-container">
+
+    <!-- School Level -->
+    <div class="course-card">
+      <div class="card-header" onclick="toggleBody(this)">
+        <span><i class="fas fa-school"></i> School Level (9th & 10th)</span>
+        <i class="fas fa-chevron-down"></i>
+      </div>
+      <div class="card-body">
+        <ul>
+          <li><input type="checkbox"> <i class="fas fa-book"></i> Mathematics - ₹3000</li>
+          <li><input type="checkbox"> <i class="fas fa-book"></i> Science - ₹3200</li>
+          <li><input type="checkbox"> <i class="fas fa-book"></i> Social Studies - ₹2800</li>
+          <li><input type="checkbox"> <i class="fas fa-book"></i> English - ₹2500</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Intermediate -->
+    <div class="course-card">
+      <div class="card-header" onclick="toggleBody(this)">
+        <span><i class="fas fa-university"></i> Intermediate (11th & 12th)</span>
+        <i class="fas fa-chevron-down"></i>
+      </div>
+      <div class="card-body">
+        <ul>
+          <li><input type="checkbox"> <i class="fas fa-square-root-alt"></i> Mathematics - ₹3500</li>
+          <li><input type="checkbox"> <i class="fas fa-atom"></i> Physics - ₹3600</li>
+          <li><input type="checkbox"> <i class="fas fa-vial"></i> Chemistry - ₹3600</li>
+          <li><input type="checkbox"> <i class="fas fa-calculator"></i> Commerce - ₹3000</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- UG/PG -->
+    <div class="course-card">
+      <div class="card-header" onclick="toggleBody(this)">
+        <span><i class="fas fa-graduation-cap"></i> UG/PG Programs</span>
+        <i class="fas fa-chevron-down"></i>
+      </div>
+      <div class="card-body">
+        <ul>
+          <li><input type="checkbox"> <i class="fas fa-user-graduate"></i> B.Sc / M.Sc - ₹5000</li>
+          <li><input type="checkbox"> <i class="fas fa-laptop-code"></i> BCA / MCA - ₹5500</li>
+          <li><input type="checkbox"> <i class="fas fa-capsules"></i> B.Pharmacy / Diploma - ₹5200</li>
+          <li><input type="checkbox"> <i class="fas fa-briefcase"></i> B.Com / M.Com - ₹4800</li>
+          <li><input type="checkbox"> <i class="fas fa-chart-line"></i> MBA (All Subjects) - ₹6000</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- B.Tech -->
+    <div class="course-card">
+      <div class="card-header" onclick="toggleBody(this)">
+        <span><i class="fas fa-cogs"></i> B.Tech</span>
+        <i class="fas fa-chevron-down"></i>
+      </div>
+      <div class="card-body">
+        <ul>
+          <li><input type="checkbox"> <i class="fas fa-calculator"></i> Mathematics 1 (M1) - ₹4000</li>
+          <li><input type="checkbox"> <i class="fas fa-calculator"></i> Mathematics 2 (M2) - ₹4000</li>
+          <li><input type="checkbox"> <i class="fas fa-calculator"></i> Mathematics 3 (M3) - ₹4200</li>
+          <li><input type="checkbox"> <i class="fas fa-calculator"></i> Mathematics 4 (M4) - ₹4200</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="demo-banner">
+      🎉 FREE 5 Days Demo Classes Available!
+    </div>
+
+  
+    <div class="summary">
+      <h3>Total Price: ₹<span id="totalPrice">0</span></h3>
+      <button onclick="submitSelection()"><i class="fas fa-check-circle"></i> Submit Selection</button>
+    </div>
+
+  </div>
+
+  <footer>
+    &copy; 2025 VK Academy | All rights reserved.
+  </footer>
+
+  <script>
+    function toggleBody(header) {
+      const body = header.nextElementSibling;
+      const icon = header.querySelector('.fas.fa-chevron-down');
+      body.style.display = body.style.display === "block" ? "none" : "block";
+      icon.style.transform = body.style.display === "block" ? "rotate(180deg)" : "rotate(0deg)";
+    }
+
+    function toggleDarkMode() {
+      document.body.classList.toggle("dark-mode");
+    }
+
+    function updateTotal() {
+      const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+      let total = 0;
+      checkboxes.forEach(cb => {
+        if (cb.checked) {
+          const priceMatch = cb.parentElement.innerText.match(/₹(\d+)/);
+          if (priceMatch) total += parseInt(priceMatch[1]);
+        }
+      });
+      document.getElementById("totalPrice").innerText = total;
+    }
+
+    function submitSelection() {
+      const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+      const selectedCourses = [];
+      checkboxes.forEach(cb => {
+        if (cb.checked) {
+          selectedCourses.push(cb.parentElement.innerText.trim());
+        }
+      });
+
+      if (selectedCourses.length === 0) {
+        alert("Please select at least one course.");
+      } else {
+        alert("You have selected:\n\n" + selectedCourses.join("\n"));
+      }
+    }
+
+    // Attach change listener to all checkboxes on load
+    window.onload = () => {
+      document.querySelectorAll('input[type="checkbox"]').forEach(cb => {
+        cb.addEventListener('change', updateTotal);
+      });
+    };
+  </script>
+</body>
+</html>

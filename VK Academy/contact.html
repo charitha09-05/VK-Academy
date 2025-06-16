@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VK Academy Contacts</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f4f4f4;
+    }
+
+    nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #580063; /* Purple background */
+  padding: 10px 20px;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.nav-left img {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+}
+
+.brand-name {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-right {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+}
+
+.nav-right a {
+  color: white;
+  font-weight: 600;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.nav-right a:hover {
+  background-color: #770080;
+  padding: 8px 12px;
+  border-radius: 5px;
+}
+
+    header {
+      background-color: #2c3e50;
+      color: #fff;
+      padding: 1rem 2rem;
+      text-align: center;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 30px auto;
+      background: #fff;
+      padding: 30px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      color: #2c3e50;
+      margin-bottom: 20px;
+    }
+
+    .info, .form {
+      margin-bottom: 30px;
+    }
+
+    .info p {
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+
+    form input, form textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 1rem;
+    }
+
+    form button {
+      padding: 10px 20px;
+      background-color: #3498db;
+      border: none;
+      color: white;
+      font-size: 1rem;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    iframe {
+      width: 100%;
+      height: 300px;
+      border: 0;
+      margin-top: 20px;
+    }
+
+    footer {
+      background-color: #2c3e50;
+      color: #fff;
+      text-align: center;
+      padding: 1rem;
+    }
+  </style>
+</head>
+
+<body>
+    <nav>
+        <div class="nav-left">
+          <img src="p1.jpg" alt="VK Academy Logo" />
+          <span class="brand-name">VK Academy</span>
+        </div>
+        <div class="nav-right">
+          <a href="vk.html"><i class="fas fa-home"></i> Home</a>
+          <a href="courses.html"><i class="fas fa-book-open"></i> Courses</a>
+          <a href="contact.html"><i class="fas fa-phone"></i> Contact</a>
+        </div>
+      </nav>
+
+  <div class="container">
+    <section class="info">
+      <h2>Get in Touch</h2>
+      <p><strong>Address:</strong> VK Academy, 2nd Floor, Sai Complex, Main Road, Tirupati, Andhra Pradesh, 517501</p>
+      <p><strong>Email:</strong> info@vkacademy.com</p>
+      <p><strong>Phone:</strong> +91 98765 43210</p>
+      <p><strong>Hours:</strong> Monday - Friday: 10:00 AM – 10:00 PM</p>
+    </section>
+
+    <section class="form">
+      <h2>Send a Message</h2>
+      <form action="#" method="post">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+
+    <section class="map">
+      <h2>Our Location</h2>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.180643920536!2d79.4191790148763!3d13.635507790419012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a4d3fce5b5b5b5b%3A0xabcdef1234567890!2sSai%20Complex%2C%20Tirupati!5e0!3m2!1sen!2sin!4v0000000000000" allowfullscreen></iframe>
+    </section>
+  </div>
+
+  <footer>
+    &copy; 2025 VK Academy. All rights reserved.
+  </footer>
+</body>
+
+</html>

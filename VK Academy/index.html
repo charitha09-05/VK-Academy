@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VK Academy</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: #580063;
+      flex-wrap: wrap;
+      padding: 10px 20px;
+    }
+
+    .nav-left {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    nav img {
+      width: 50px;
+      height: 50px;
+      border-radius: 100%;
+    }
+
+    nav h1 {
+      font-size: 1.8em;
+      color: white;
+    }
+
+    .nav-right {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: white;
+      padding: 10px 15px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background-color 0.3s;
+    }
+
+    nav a:hover {
+      background-color: #770080;
+      border-radius: 5px;
+    }
+
+    .intro {
+      padding: 60px 20px;
+      text-align: center;
+      background: linear-gradient(to right, #d3b6ff, #f1e4ff);
+      animation: fadeIn 1.5s ease-in-out;
+    }
+
+    .intro h2 {
+      font-size: 2.5em;
+      margin-bottom: 15px;
+      color: #4a004d;
+    }
+
+    .intro p {
+      font-size: 1.2em;
+      max-width: 700px;
+      margin: 0 auto;
+      line-height: 1.6;
+    }
+
+    .cta-button {
+      text-align: center;
+      margin: 40px 0;
+    }
+
+    .explore-btn {
+      background-color: #580063;
+      color: white;
+      padding: 15px 30px;
+      text-decoration: none;
+      font-size: 1.2em;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      transition: background-color 0.3s, transform 0.2s;
+      display: inline-block;
+    }
+
+    .explore-btn:hover {
+      background-color: #770080;
+      transform: translateY(-3px);
+    }
+
+    .highlight {
+      margin: 40px auto;
+      text-align: center;
+    }
+
+    .highlight img {
+      max-width: 90%;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    footer {
+      background-color: #32003b;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 30px;
+    }
+
+    @media (max-width: 768px) {
+      nav {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .nav-right {
+        width: 100%;
+        justify-content: space-around;
+        margin-top: 10px;
+      }
+
+      nav h1 {
+        font-size: 1.5em;
+      }
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <nav>
+    <div class="nav-left">
+      <img src="p1.jpg" alt="VK Academy Logo" />
+      <span class="brand-name">VK Academy</span>
+    </div>
+    <div class="nav-right">
+      <a href="vk.html"><i class="fas fa-home"></i> Home</a>
+      <a href="courses.html"><i class="fas fa-book-open"></i> Courses</a>
+      <a href="contact.html"><i class="fas fa-phone"></i> Contact</a>
+    </div>
+  </nav>
+  
+
+  <section class="intro">
+    <h2>Welcome to VK Academy</h2>
+    <p>
+      Empowering students from 9th grade to B.Tech with expert coaching in
+      Mathematics, Physics, Chemistry, Commerce, and more. Join us and boost
+      your academic success with our experienced faculty and interactive
+      sessions.
+    </p>
+  </section>
+
+  <section class="cta-button">
+    <a href="courses.html" class="explore-btn"><i class="fas fa-graduation-cap"></i> Explore Courses</a>
+  </section>
+
+  <footer>
+    &copy; 2025 VK Academy | All rights reserved.
+  </footer>
+</body>
+
+</html>
